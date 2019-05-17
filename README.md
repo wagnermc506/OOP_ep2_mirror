@@ -48,7 +48,9 @@ A tarefa não é trivial, pois leva em consideração algumas peculiaridades dos
 Com a aposentadoria de Zé, não existem outros funcionários capazes de realizar a mesma tarefa. Como um bom gestor, o proprietário deseja digitalizar todo o sistema de decisões para não correr o risco de outro funcionário deixar a empresa e, assim, fazer o problema reaparecer.	Além disso, há o desejo de sofisticar os resultados obtidos. Você foi contratado(a) como o(a) Engenheiro(a) de Software responsável pelo desenvolvimento da nova solução. Os requisitos elicitados são:
 
 - O sistema deve persistir (armazenar) a frota de veículos da empresa, possibilitando a criação e a remoção de veículos existentes;
-- O sistema deve receber, do usuário, os seguintes dados para realizar os cálculos:
+- O sistema deve permitir que o usuário possa configurar a margem de lucro com a qual os cálculos serão realizados;
+- O sistema deve persistir (armazenar) a margem de lucro inserida pelo usuário;
+- O sistema deve receber, do usuário, os seguintes dados no momento da realização dos cálculos:
   - O peso da carga a ser entregue;
   - A distância a ser percorrida na entrega;
   - O tempo máximo no qual a entrega deve ser realizada;
