@@ -33,10 +33,10 @@ A tarefa não é trivial, pois leva em consideração algumas peculiaridades dos
   - A cada Kg de carga, o rendimento é reduzido em 0.025 Km/L com gasolina e 0.0231 Km/L com álcool
 - Moto
   - **Combustível**: Gasolina ou Álcool
-  - **Rendimento**: 50 Km/L
+  - **Rendimento**: 50 Km/L com gasolina, 43 Km/L com álcool
   - **Carga máxima**: 50 kg
   - **Velocidade média**: 110 Km/h
-  - A cada Kg de carga, o rendimento é reduzido em 0.3 Km/L
+  - A cada Kg de carga, o rendimento é reduzido em 0.3 Km/L com gasolina e 0.4 Km/L com álcool
 
 
   Os valores dos combustíveis a serem utilizados são:
