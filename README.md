@@ -27,10 +27,10 @@ A tarefa não é trivial, pois leva em consideração algumas peculiaridades dos
   - A cada Kg de carga, o rendimento é reduzido em 0.001 Km/L
 - Carro
   - **Combustível**: Gasolina ou Álcool
-  - **Rendimento**: 14 Km/L
+  - **Rendimento**: 14 Km/L com gasolina, 12Km/L com álcool
   - **Carga máxima**: 360 Kg
   - **Velocidade média**: 100 Km/h
-  - A cada Kg de carga, o rendimento é reduzido em 0.025 Km/L
+  - A cada Kg de carga, o rendimento é reduzido em 0.025 Km/L com gasolina e 0.0231 Km/L com álcool
 - Moto
   - **Combustível**: Gasolina ou Álcool
   - **Rendimento**: 50 Km/L
