@@ -5,15 +5,14 @@
  */
 package transporteinc;
 
-public class Carreta extends Veiculo {
-    private static int qtdeCarreta;
+public class Van extends Veiculo{
+    private static int qtdeVan;
     
-    Carreta(){
+    Van(){
         this.rendimento = 8;
         this.perdaRendimento = 0.0002;
         this.cargaMax = 30000;
         this.velocidadeMedia = 60;
         this.tipoDeCombustivel = "Diesel";
     }
-    
 }
