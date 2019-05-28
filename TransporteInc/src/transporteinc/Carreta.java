@@ -13,7 +13,6 @@ public class Carreta extends Veiculo {
         this.perdaRendimento = 0.0002;
         this.cargaMax = 30000;
         this.velocidadeMedia = 60;
-        this.tipoDeCombustivel = "Diesel";
     }
     
 }

@@ -9,10 +9,9 @@ public class Van extends Veiculo{
     private static int qtdeVan;
     
     Van(){
-        this.rendimento = 8;
-        this.perdaRendimento = 0.0002;
-        this.cargaMax = 30000;
-        this.velocidadeMedia = 60;
-        this.tipoDeCombustivel = "Diesel";
+        this.rendimento = 10;
+        this.perdaRendimento = 0.001;
+        this.cargaMax = 3500;
+        this.velocidadeMedia = 80;
     }
 }
