@@ -19,6 +19,7 @@ public class UserInput {
         UserInput.distancia = distancia;
         UserInput.tempo = tempo;
         UserInput.carga = carga;
+        //System.out.println(UserInput.carga + " " +UserInput.distancia + " " + UserInput.tempo);
     }
     
     public static void setMargem(double margem){

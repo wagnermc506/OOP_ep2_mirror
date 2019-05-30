@@ -15,16 +15,30 @@ public class PrecoServico {
         setPrecoCombustivel(tipo);
     }
     
-    public void CalcularPrecoServico(double qtdeCombustivel){
+    public double getLucro(){
+        return this.lucro;
+    }
+    
+    public double getTotal(){
+        return this.total;
+    }
+    
+    private void CalcularPercurso(double qtdeCombustivel){
         this.precoCombustivelOperacao = qtdeCombustivel * precoCombustivel; 
     }
     
-    public void CalcularLucro(){
+    private void CalcularLucro(){
         this.lucro = this.precoCombustivelOperacao * UserInput.getMargem()/100;
     }
     
-    public void CalcularTotalServico(){
+    private void CalcularTotalServico(){
         this.total = this.lucro + this.precoCombustivelOperacao;
+    }
+    
+    public void CalcularFrete(double qtdeCombustivel){
+        this.CalcularPercurso(qtdeCombustivel);
+        this.CalcularLucro();
+        this.CalcularTotalServico();
     }
     
     private void setPrecoCombustivel(String tipo){

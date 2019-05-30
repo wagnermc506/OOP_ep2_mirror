@@ -11,13 +11,21 @@ public class Veiculo {
     protected double perdaRendimento;
     protected double cargaMax;
     protected double velocidadeMedia;
-    //protected String tipoDeCombustivel;
-    /*CalculoOperacao calculo;
+    protected String tipoDeCombustivel;
+    protected CalculoOperacao calculo;
     
-    public Veiculo() {
-        this.calculo = new CalculoOperacao();
-        this.calculo.CalculaRendimentoReal(rendimento, perdaRendimento, cargaMax);
-    }*/
+    /*public Veiculo() {
+        this.calculo = new CalculoOperacao(this.tipoDeCombustivel);
+    }
+    */
+    protected void inicializarCalculos(){
+        this.calculo = new CalculoOperacao(this.tipoDeCombustivel);
+    }
+    
+    protected void calcularServico(){
+        calculo.calculaAll(this.rendimento, this.perdaRendimento, this.velocidadeMedia);
+    }
+    
     public static void aumentarQtdeVeiculos(int qtdeMais){
         qtdeVeiculos += qtdeMais;
     }

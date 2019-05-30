@@ -6,21 +6,29 @@
 package transporteinc;
 
 public class CalculoOperacao {
-    private double rendimentoReal;
     private double qtdeCombustivelOperacao;
     private double tempoEstimado;
-    private String tipo;
-    PrecoServico preco = new PrecoServico(this.tipo);
+    PrecoServico preco;
     
-    public void calculaRendimentoReal(double distancia, double rendimento, double perda, double carga){
-        this.rendimentoReal = rendimento - (carga * perda);
-        this.qtdeCombustivelOperacao = distancia / this.rendimentoReal;
+    CalculoOperacao(String tipoDeCombustivel){
+        preco = new PrecoServico(tipoDeCombustivel);
     }
     
-    public void calculaVelocidade(double distancia, double velocidade){
+    private void calculaQtdeCombustivel(double distancia, double carga, double rendimento, double perda){
+        double rendimentoReal;
+        rendimentoReal = rendimento - (carga * perda);
+        this.qtdeCombustivelOperacao = distancia / rendimentoReal;
+    }
+    
+    private void calculaVelocidade(double distancia, double velocidade){
         this.tempoEstimado = distancia/velocidade; 
     }
     
-    
+    public void calculaAll(double rendimento, double perda, double velocidade){
+        calculaQtdeCombustivel(UserInput.getDistancia(), UserInput.getCarga(), rendimento, perda);
+        calculaVelocidade(UserInput.getDistancia(), velocidade);
+        preco.CalcularFrete(qtdeCombustivelOperacao);
+                
+    }
 }
 
