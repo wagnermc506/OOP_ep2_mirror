@@ -18,12 +18,16 @@ public class Moto extends Veiculo{
             this.perdaRendimento = 0.4;
             this.cargaMax = 50;
             this.velocidadeMedia = 110;
+            this.tipoDeCombustivel = "Alcool";
+            inicializarCalculos();
         }
         else if("Gasolina".equals(TipoDeCombustivel)){
             this.rendimento = 50;
             this.perdaRendimento = 0.3;
             this.cargaMax = 50;
             this.velocidadeMedia = 110;
+            this.tipoDeCombustivel = "Gasolina";
+            inicializarCalculos();
         }
     }
 }

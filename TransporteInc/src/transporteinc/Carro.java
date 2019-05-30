@@ -18,12 +18,16 @@ public class Carro extends Veiculo{
             this.perdaRendimento = 0.0231;
             this.cargaMax = 360;
             this.velocidadeMedia = 100;
+            this.tipoDeCombustivel = "Alcool";
+            inicializarCalculos();
         }
         else if("Gasolina".equals(TipoDeCombustivel)){
             this.rendimento = 14;
             this.perdaRendimento = 0.025;
             this.cargaMax = 360;
             this.velocidadeMedia = 100;
+            this.tipoDeCombustivel = "Gasolina";
+            inicializarCalculos();
         }
     }
 }

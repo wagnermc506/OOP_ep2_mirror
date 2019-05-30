@@ -13,5 +13,7 @@ public class Van extends Veiculo{
         this.perdaRendimento = 0.001;
         this.cargaMax = 3500;
         this.velocidadeMedia = 80;
+        this.tipoDeCombustivel = "Diesel";
+        inicializarCalculos();
     }
 }
