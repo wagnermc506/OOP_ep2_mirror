@@ -6,7 +6,6 @@
 package transporteinc;
 
 public class PrecoServico {
-    public static double margemDeLucro;
     private double precoCombustivelOperacao;
     private double precoCombustivel;
     private double lucro;
@@ -21,7 +20,7 @@ public class PrecoServico {
     }
     
     public void CalcularLucro(){
-        this.lucro = this.precoCombustivelOperacao * PrecoServico.margemDeLucro/100;
+        this.lucro = this.precoCombustivelOperacao * UserInput.getMargem()/100;
     }
     
     public void CalcularTotalServico(){

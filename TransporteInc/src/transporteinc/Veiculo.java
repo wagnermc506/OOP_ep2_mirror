@@ -11,7 +11,7 @@ public class Veiculo {
     protected double perdaRendimento;
     protected double cargaMax;
     protected double velocidadeMedia;
-    protected String tipoDeCombustivel;
+    //protected String tipoDeCombustivel;
     /*CalculoOperacao calculo;
     
     public Veiculo() {
@@ -24,9 +24,9 @@ public class Veiculo {
     public static void diminuirQtdeVeiculos(int qtdeMenos){
         qtdeVeiculos -= qtdeMenos;
     }
-    public void setTipoDeCombustivel(String tipo){
+    /*public void setTipoDeCombustivel(String tipo){
         this.tipoDeCombustivel = tipo;
-    }
+    }*/
     /*public void setRendimento(double rendimento){
         this.rendimento = rendimento;
     }

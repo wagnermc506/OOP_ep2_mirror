@@ -8,10 +8,19 @@ package transporteinc;
 public class CalculoOperacao {
     private double rendimentoReal;
     private double qtdeCombustivelOperacao;
-    //PrecoServico preco = new PrecoServico();
+    private double tempoEstimado;
+    private String tipo;
+    PrecoServico preco = new PrecoServico(this.tipo);
     
-    public void CalculaRendimentoReal(double km, double rendimento, double perda, double carga){
+    public void calculaRendimentoReal(double distancia, double rendimento, double perda, double carga){
         this.rendimentoReal = rendimento - (carga * perda);
-        this.qtdeCombustivelOperacao = km / this.rendimentoReal;
+        this.qtdeCombustivelOperacao = distancia / this.rendimentoReal;
     }
+    
+    public void calculaVelocidade(double distancia, double velocidade){
+        this.tempoEstimado = distancia/velocidade; 
+    }
+    
+    
 }
+
