@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package GUI;
-
+import transporteinc.*;
 /**
  *
  * @author wagner
@@ -243,7 +243,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         distancia = Float.parseFloat(txtDistancia.getText());
         tempo = Float.parseFloat(txtTempo.getText());
         carga = Float.parseFloat(txtPeso.getText());
-        transporteinc.UserInput.setall(distancia, tempo, carga);
+        UserInput.setall(distancia, tempo, carga);
+        Controle.fazerCalculos();
     }//GEN-LAST:event_InButtonActionPerformed
 
     /**
@@ -272,7 +273,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(TransporteIncGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
+        
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
