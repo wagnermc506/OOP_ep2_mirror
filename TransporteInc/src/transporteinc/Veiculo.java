@@ -6,7 +6,6 @@
 package transporteinc;
 
 public class Veiculo {
-    private static int qtdeVeiculos;
     protected double rendimento;
     protected double perdaRendimento;
     protected double cargaMax;
@@ -26,7 +25,7 @@ public class Veiculo {
         calculo.calculaAll(this.rendimento, this.perdaRendimento, this.velocidadeMedia);
     }
     
-    public static void aumentarQtdeVeiculos(int qtdeMais){
+    /*public static void aumentarQtdeVeiculos(int qtdeMais){
         qtdeVeiculos += qtdeMais;
     }
     public static void diminuirQtdeVeiculos(int qtdeMenos){

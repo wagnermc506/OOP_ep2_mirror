@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package GUI;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import transporteinc.*;
 /**
  *
@@ -15,6 +18,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
      * Creates new form TransporteIncGUI
      */
     public TransporteIncGUI() {
+        try {
+            setNums();
+        } catch (IOException ex) {
+            Logger.getLogger(TransporteIncGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
         initComponents();
     }
 
@@ -33,10 +41,10 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        DispCarreta = new javax.swing.JLabel();
+        DispVan = new javax.swing.JLabel();
+        DispCarro = new javax.swing.JLabel();
+        DispMoto = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         InlblPeso = new javax.swing.JLabel();
         InlblDistancia = new javax.swing.JLabel();
@@ -51,6 +59,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         InlblKm = new javax.swing.JLabel();
         InlblH = new javax.swing.JLabel();
         InButton = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,13 +78,21 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jLabel5.setText("Disponibilidade");
 
-        jLabel6.setText("jLabel6");
+        DispCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DispCarreta.setText("jLabel6");
+        DispCarreta.setText("1" + " / " + numCarretas);
 
-        jLabel7.setText("jLabel7");
+        DispVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DispVan.setText("jLabel7");
+        DispVan.setText("1" + " / " + numVans);
 
-        jLabel8.setText("jLabel8");
+        DispCarro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DispCarro.setText("jLabel8");
+        DispCarro.setText("1" + " / " + numCarros);
 
-        jLabel9.setText("jLabel9");
+        DispMoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DispMoto.setText("jLabel9");
+        DispMoto.setText("1" + " / " + numMotos);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -84,9 +101,6 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(jLabel5))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -101,12 +115,15 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(37, 37, 37)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel9))))
-                .addContainerGap(293, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(DispCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                            .addComponent(DispVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DispCarro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DispMoto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(136, 136, 136)
+                        .addComponent(jLabel5)))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,19 +133,19 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
+                    .addComponent(DispCarreta))
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel7))
+                    .addComponent(DispVan))
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel8))
+                    .addComponent(DispCarro))
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel9))
+                    .addComponent(DispMoto))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -214,24 +231,40 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(10, 10, 10))
         );
 
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 936, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1018, Short.MAX_VALUE))
+                .addGap(2, 2, 2)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(140, 140, 140)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(140, 140, 140)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(249, Short.MAX_VALUE))
         );
 
@@ -246,7 +279,15 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         UserInput.setall(distancia, tempo, carga);
         Controle.fazerCalculos();
     }//GEN-LAST:event_InButtonActionPerformed
-
+    private void setNums() throws IOException{
+        LerArquivo FileRead = new LerArquivo();
+        this.numCarretas = FileRead.DL.getQtdeVeiculos(0);
+        this.numVans = FileRead.DL.getQtdeVeiculos(1);
+        this.numCarros = FileRead.DL.getQtdeVeiculos(2);
+        this.numMotos = FileRead.DL.getQtdeVeiculos(3);
+        this.lucro = FileRead.DL.getLucro();
+        FileRead.fechar();
+    }
     /**
      * @param args the command line arguments
      */
@@ -283,8 +324,17 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             }
         });
     }
-
+    
+    private int numCarretas;
+    private int numVans;
+    private int numCarros;
+    private int numMotos;
+    private int lucro;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel DispCarreta;
+    private javax.swing.JLabel DispCarro;
+    private javax.swing.JLabel DispMoto;
+    private javax.swing.JLabel DispVan;
     private javax.swing.JButton InButton;
     private javax.swing.JLabel InlblDistancia;
     private javax.swing.JLabel InlblH;
@@ -297,12 +347,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
