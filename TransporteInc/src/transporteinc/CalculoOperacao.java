@@ -53,6 +53,10 @@ public class CalculoOperacao {
         this.podeSerFeito = this.entregaNoTempo && this.suportaCarga;
     }
     
+    public boolean isViavel(){
+        return this.podeSerFeito;
+    }
+    
     public void calculaAll(double rendimento, double perda, double velocidade, double cargaMax){
         calculaQtdeCombustivel(UserInput.getDistancia(), UserInput.getCarga(), rendimento, perda);
         calculaTempo(UserInput.getDistancia(), velocidade);

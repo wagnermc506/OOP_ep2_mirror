@@ -141,9 +141,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jLabel63 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
-        jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
+        lblMenorCusto = new javax.swing.JLabel();
+        lblMenorTempo = new javax.swing.JLabel();
+        lblMaiorCB = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -879,37 +879,36 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap(71, Short.MAX_VALUE))
         );
 
-        jLabel65.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel65.setText("-");
+        lblMenorCusto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMenorCusto.setText("-");
 
-        jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel66.setText("-");
+        lblMenorTempo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMenorTempo.setText("-");
 
-        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel67.setText("-");
+        lblMaiorCB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMaiorCB.setText("-");
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                        .addComponent(jLabel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblMenorCusto, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                    .addComponent(lblMenorTempo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblMaiorCB, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jLabel65)
+                .addComponent(lblMenorCusto)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel66)
+                .addComponent(lblMenorTempo)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel67)
+                .addComponent(lblMaiorCB)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -928,9 +927,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(85, 85, 85)))
+                        .addGap(29, 29, 29)))
                 .addGap(1, 1, 1)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
@@ -1033,6 +1032,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         Controle.verificaTudo(lblSuportaCargaMoto2, lblEntregaNoTempoMoto2);
         Controle.takeTime(lblTempoEstimadoMoto2);
         Controle.exibePreco(lblCustoMoto2, lblLucroMoto2, lblPrecoMoto2);
+        
+        lblMenorCusto.setText(Controle.getMenorCusto());
+        lblMenorTempo.setText(Controle.getMenorTempo());
         
     }//GEN-LAST:event_InButtonActionPerformed
 
@@ -1162,9 +1164,6 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1203,6 +1202,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblLucroMoto1;
     private javax.swing.JLabel lblLucroMoto2;
     private javax.swing.JLabel lblLucroVan;
+    private javax.swing.JLabel lblMaiorCB;
+    private javax.swing.JLabel lblMenorCusto;
+    private javax.swing.JLabel lblMenorTempo;
     private javax.swing.JLabel lblPrecoCarreta;
     private javax.swing.JLabel lblPrecoCarro1;
     private javax.swing.JLabel lblPrecoCarro2;

@@ -13,12 +13,12 @@ import java.text.DecimalFormat;
  * @author wagner
  */
 public class Controle {
-    public static Carreta carreta = new Carreta();              //case(1)
-    public static Van van = new Van();                          //case(2)
-    public static Carro carroAlcool = new Carro("Alcool");      //case(3)
-    public static Carro carroGasolina = new Carro("Gasolina");  //case(4)
-    public static Moto motoAlcool = new Moto("Alcool");         //case(5)
-    public static Moto motoGasolina = new Moto("Gasolina");     //case(6)
+    public static Carreta carreta = new Carreta();              //case(0)
+    public static Van van = new Van();                          //case(1)
+    public static Carro carroAlcool = new Carro("Alcool");      //case(2)
+    public static Carro carroGasolina = new Carro("Gasolina");  //case(3)
+    public static Moto motoAlcool = new Moto("Alcool");         //case(4)
+    public static Moto motoGasolina = new Moto("Gasolina");     //case(5)
     private static int count = 0;
     private static final DecimalFormat df = new DecimalFormat("0.00");
     
@@ -29,6 +29,89 @@ public class Controle {
         carroGasolina.calcularServico();
         motoAlcool.calcularServico();
         motoGasolina.calcularServico();
+    }
+    
+    private static double setMenor(int i, Veiculo a, double menor){
+        if(i == 0){
+            return a.calculo.preco.getCusto();
+        }
+        return menor;
+    }
+    
+    public static String getMenorCusto(){
+        double list[] = {0, 0, 0, 0, 0, 0};
+        String listS[] = {"", "", "", "", "", ""};
+        int i = 0;
+        double menor = -1;
+        if(carreta.calculo.isViavel()){
+            list[i] = carreta.calculo.preco.getCusto();
+            menor = setMenor(i, carreta, menor);
+            listS[i] = "Carreta";
+            i++;
+        }
+        if(van.calculo.isViavel()){
+            list[i] = van.calculo.preco.getCusto();
+            menor = setMenor(i, van, menor);
+            listS[i] = "Van";
+            i++;
+        }
+        if(carroAlcool.calculo.isViavel()){
+            list[i] = carroAlcool.calculo.preco.getCusto();
+            menor = setMenor(i, carroAlcool, menor);
+            listS[i] = "CarroAlcool";
+            i++;
+        }
+        if(carroGasolina.calculo.isViavel()){
+            list[i] = carroGasolina.calculo.preco.getCusto();
+            menor = setMenor(i, carroGasolina, menor);
+            listS[i] = "CarroGasolina";
+            i++;
+        }
+        if(motoAlcool.calculo.isViavel()){
+            list[i] = motoAlcool.calculo.preco.getCusto();
+            menor = setMenor(i, motoAlcool, menor);
+            listS[i] = "motoAlcool";
+            i++;
+        }
+        if(motoGasolina.calculo.isViavel()){
+            list[i] = motoGasolina.calculo.preco.getCusto();
+            menor = setMenor(i, motoGasolina, menor);
+            listS[i] = "MotoGasolina";
+            i++;
+        }
+        
+        int n = 0;
+        if (menor == -1){
+            return "Nenhum";
+        }
+        else{
+            for(int j = 0; j < i; j++){
+                if(menor > list[j]){
+                    menor = list[j];
+                    n = j;
+                }
+            }
+        }
+        String Veiculo = listS[n];
+        switch(Veiculo){
+            case("Carreta"):
+                return "Carreta";
+            case("Van"):
+                return "Van";
+            case("CarroAlcool"):
+                return "Carro(Alcool)";
+            case("CarroGasolina"):
+                return "Carro(Gasolina)";
+            case("MotoAlcool"):
+                return "Moto(Alcool)";
+            case("MotoGasolina"):
+                return "Moto(Gasolina)";
+        }
+        return null;
+    }
+    
+    public static String getMenorTempo(){
+        return null;
     }
     
     public static void exibePreco(javax.swing.JLabel custo, javax.swing.JLabel lucro, javax.swing.JLabel preco){
