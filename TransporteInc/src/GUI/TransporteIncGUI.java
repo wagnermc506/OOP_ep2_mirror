@@ -82,9 +82,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaCarreta = new javax.swing.JLabel();
         lblEntregaNoTempoCarreta = new javax.swing.JLabel();
         lblTempoEstimadoCarreta = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        lblCustoCarreta = new javax.swing.JLabel();
+        lblLucroCarreta = new javax.swing.JLabel();
+        lblPrecoCarreta = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
@@ -92,9 +92,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaVan = new javax.swing.JLabel();
         lblEntregaNoTempoVan = new javax.swing.JLabel();
         lblTempoEstimadoVan = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        lblCustoVan = new javax.swing.JLabel();
+        lblLucroVan = new javax.swing.JLabel();
+        lblPrecoVan = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
@@ -102,9 +102,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaCarro1 = new javax.swing.JLabel();
         lblEntregaNoTempoCarro1 = new javax.swing.JLabel();
         lblTempoEstimadoCarro1 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        lblCustoCarro1 = new javax.swing.JLabel();
+        lblLucroCarro1 = new javax.swing.JLabel();
+        lblPrecoCarro1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
@@ -112,9 +112,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaCarro2 = new javax.swing.JLabel();
         lblEntregaNoTempoCarro2 = new javax.swing.JLabel();
         lblTempoEstimadoCarro2 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
+        lblCustoCarro2 = new javax.swing.JLabel();
+        lblLucroCarro2 = new javax.swing.JLabel();
+        lblPrecoCarro2 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
@@ -122,9 +122,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaMoto1 = new javax.swing.JLabel();
         lblEntregaNoTempoMoto1 = new javax.swing.JLabel();
         lblTempoEstimadoMoto1 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
+        lblCustoMoto1 = new javax.swing.JLabel();
+        lblLucroMoto1 = new javax.swing.JLabel();
+        lblPrecoMoto1 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jPanel12 = new javax.swing.JPanel();
         jLabel54 = new javax.swing.JLabel();
@@ -132,9 +132,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblSuportaCargaMoto2 = new javax.swing.JLabel();
         lblEntregaNoTempoMoto2 = new javax.swing.JLabel();
         lblTempoEstimadoMoto2 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
+        lblCustoMoto2 = new javax.swing.JLabel();
+        lblLucroMoto2 = new javax.swing.JLabel();
+        lblPrecoMoto2 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jPanel13 = new javax.swing.JPanel();
         jLabel62 = new javax.swing.JLabel();
@@ -353,16 +353,16 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jLabel9.setText("Entrega no tempo");
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Tempo estimado");
+        jLabel10.setText("Tempo estimado (h)");
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Custo");
+        jLabel11.setText("Custo (R$)");
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Lucro");
+        jLabel12.setText("Lucro (R$)");
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Preço");
+        jLabel13.setText("Preço (R$)");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -418,14 +418,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoCarreta.setText("/");
 
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("/");
+        lblCustoCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoCarreta.setText("/");
 
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("/");
+        lblLucroCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroCarreta.setText("/");
 
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("/");
+        lblPrecoCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoCarreta.setText("/");
 
         jButton1.setText("Ok");
         jButton1.setEnabled(false);
@@ -449,9 +449,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -471,11 +471,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoCarreta)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel19)
+                .addComponent(lblCustoCarreta)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel20)
+                .addComponent(lblLucroCarreta)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel21)
+                .addComponent(lblPrecoCarreta)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -496,14 +496,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoVan.setText("/");
 
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("/");
+        lblCustoVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoVan.setText("/");
 
-        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("/");
+        lblLucroVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroVan.setText("/");
 
-        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("/");
+        lblPrecoVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoVan.setText("/");
 
         jButton2.setText("Ok");
         jButton2.setEnabled(false);
@@ -522,9 +522,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -544,11 +544,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoVan)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel27)
+                .addComponent(lblCustoVan)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel28)
+                .addComponent(lblLucroVan)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel29)
+                .addComponent(lblPrecoVan)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -569,14 +569,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoCarro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoCarro1.setText("/");
 
-        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("/");
+        lblCustoCarro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoCarro1.setText("/");
 
-        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("/");
+        lblLucroCarro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroCarro1.setText("/");
 
-        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel37.setText("/");
+        lblPrecoCarro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoCarro1.setText("/");
 
         jButton3.setText("Ok");
         jButton3.setEnabled(false);
@@ -595,9 +595,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -617,11 +617,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoCarro1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel35)
+                .addComponent(lblCustoCarro1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel36)
+                .addComponent(lblLucroCarro1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel37)
+                .addComponent(lblPrecoCarro1)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -642,14 +642,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoCarro2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoCarro2.setText("/");
 
-        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel43.setText("/");
+        lblCustoCarro2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoCarro2.setText("/");
 
-        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel44.setText("/");
+        lblLucroCarro2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroCarro2.setText("/");
 
-        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel45.setText("/");
+        lblPrecoCarro2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoCarro2.setText("/");
 
         jButton4.setText("Ok");
         jButton4.setEnabled(false);
@@ -668,9 +668,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -690,11 +690,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoCarro2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel43)
+                .addComponent(lblCustoCarro2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel44)
+                .addComponent(lblLucroCarro2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel45)
+                .addComponent(lblPrecoCarro2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton4)
                 .addContainerGap())
@@ -715,14 +715,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoMoto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoMoto1.setText("/");
 
-        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel51.setText("/");
+        lblCustoMoto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoMoto1.setText("/");
 
-        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel52.setText("/");
+        lblLucroMoto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroMoto1.setText("/");
 
-        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel53.setText("/");
+        lblPrecoMoto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoMoto1.setText("/");
 
         jButton5.setText("Ok");
         jButton5.setEnabled(false);
@@ -741,9 +741,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -763,11 +763,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoMoto1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel51)
+                .addComponent(lblCustoMoto1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel52)
+                .addComponent(lblLucroMoto1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel53)
+                .addComponent(lblPrecoMoto1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton5)
                 .addContainerGap())
@@ -788,14 +788,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblTempoEstimadoMoto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTempoEstimadoMoto2.setText("/");
 
-        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel59.setText("/");
+        lblCustoMoto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCustoMoto2.setText("/");
 
-        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel60.setText("/");
+        lblLucroMoto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLucroMoto2.setText("/");
 
-        jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel61.setText("/");
+        lblPrecoMoto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrecoMoto2.setText("/");
 
         jButton6.setText("Ok");
         jButton6.setEnabled(false);
@@ -814,9 +814,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblSuportaCargaMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEntregaNoTempoMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTempoEstimadoMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel60, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel61, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblCustoMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLucroMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPrecoMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -836,18 +836,18 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblTempoEstimadoMoto2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel59)
+                .addComponent(lblCustoMoto2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel60)
+                .addComponent(lblLucroMoto2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel61)
+                .addComponent(lblPrecoMoto2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton6)
                 .addContainerGap())
         );
 
         jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel62.setText("Maior Lucro");
+        jLabel62.setText("Menor Custo");
 
         jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel63.setText("Menor Tempo");
@@ -892,12 +892,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel65, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                    .addComponent(jLabel66, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                        .addComponent(jLabel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -982,7 +984,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1010,21 +1012,27 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         
         Controle.verificaTudo(lblSuportaCargaCarreta, lblEntregaNoTempoCarreta);
         Controle.takeTime(lblTempoEstimadoCarreta);
+        Controle.exibePreco(lblCustoCarreta, lblLucroCarreta, lblPrecoCarreta);
         
         Controle.verificaTudo(lblSuportaCargaVan, lblEntregaNoTempoVan);
         Controle.takeTime(lblTempoEstimadoVan);
+        Controle.exibePreco(lblCustoVan, lblLucroVan, lblPrecoVan);
         
         Controle.verificaTudo(lblSuportaCargaCarro1, lblEntregaNoTempoCarro1);
         Controle.takeTime(lblTempoEstimadoCarro1);
+        Controle.exibePreco(lblCustoCarro1, lblLucroCarro1, lblPrecoCarro1);
         
         Controle.verificaTudo(lblSuportaCargaCarro2, lblEntregaNoTempoCarro2);
         Controle.takeTime(lblTempoEstimadoCarro2);
+        Controle.exibePreco(lblCustoCarro2, lblLucroCarro2, lblPrecoCarro2);
         
         Controle.verificaTudo(lblSuportaCargaMoto1, lblEntregaNoTempoMoto1);
         Controle.takeTime(lblTempoEstimadoMoto1);
+        Controle.exibePreco(lblCustoMoto1, lblLucroMoto1, lblPrecoMoto1);
         
         Controle.verificaTudo(lblSuportaCargaMoto2, lblEntregaNoTempoMoto2);
         Controle.takeTime(lblTempoEstimadoMoto2);
+        Controle.exibePreco(lblCustoMoto2, lblLucroMoto2, lblPrecoMoto2);
         
     }//GEN-LAST:event_InButtonActionPerformed
 
@@ -1055,7 +1063,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         this.numVans = FileRead.DL.getQtdeVeiculos(1);
         this.numCarros = FileRead.DL.getQtdeVeiculos(2);
         this.numMotos = FileRead.DL.getQtdeVeiculos(3);
-        this.lucro = FileRead.DL.getLucro();
+        //this.lucro = FileRead.DL.getLucro();
         FileRead.fechar();
         this.numDispCarretas = numCarretas;
         this.numDispVans = numVans;
@@ -1104,7 +1112,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private int numVans;
     private int numCarros;
     private int numMotos;
-    private int lucro;
+    //private int lucro;
     //Número de veículos Disponíveis para fazer a entrega
     private int numDispCarretas;
     private int numDispVans;
@@ -1136,39 +1144,21 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
@@ -1195,12 +1185,30 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lblCustoCarreta;
+    private javax.swing.JLabel lblCustoCarro1;
+    private javax.swing.JLabel lblCustoCarro2;
+    private javax.swing.JLabel lblCustoMoto1;
+    private javax.swing.JLabel lblCustoMoto2;
+    private javax.swing.JLabel lblCustoVan;
     private javax.swing.JLabel lblEntregaNoTempoCarreta;
     private javax.swing.JLabel lblEntregaNoTempoCarro1;
     private javax.swing.JLabel lblEntregaNoTempoCarro2;
     private javax.swing.JLabel lblEntregaNoTempoMoto1;
     private javax.swing.JLabel lblEntregaNoTempoMoto2;
     private javax.swing.JLabel lblEntregaNoTempoVan;
+    private javax.swing.JLabel lblLucroCarreta;
+    private javax.swing.JLabel lblLucroCarro1;
+    private javax.swing.JLabel lblLucroCarro2;
+    private javax.swing.JLabel lblLucroMoto1;
+    private javax.swing.JLabel lblLucroMoto2;
+    private javax.swing.JLabel lblLucroVan;
+    private javax.swing.JLabel lblPrecoCarreta;
+    private javax.swing.JLabel lblPrecoCarro1;
+    private javax.swing.JLabel lblPrecoCarro2;
+    private javax.swing.JLabel lblPrecoMoto1;
+    private javax.swing.JLabel lblPrecoMoto2;
+    private javax.swing.JLabel lblPrecoVan;
     private javax.swing.JLabel lblSuportaCargaCarreta;
     private javax.swing.JLabel lblSuportaCargaCarro1;
     private javax.swing.JLabel lblSuportaCargaCarro2;

@@ -31,7 +31,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="121" max="32767" attributes="0"/>
+              <EmptySpace pref="109" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -573,25 +573,25 @@
                     <Component class="javax.swing.JLabel" name="jLabel10">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Tempo estimado"/>
+                        <Property name="text" type="java.lang.String" value="Tempo estimado (h)"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel11">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Custo"/>
+                        <Property name="text" type="java.lang.String" value="Custo (R$)"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel12">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Lucro"/>
+                        <Property name="text" type="java.lang.String" value="Lucro (R$)"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel13">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Pre&#xe7;o"/>
+                        <Property name="text" type="java.lang.String" value="Pre&#xe7;o (R$)"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -611,9 +611,9 @@
                                           <Component id="lblSuportaCargaCarreta" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoCarreta" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoCarreta" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel20" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel21" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoCarreta" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroCarreta" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoCarreta" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -639,11 +639,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoCarreta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoCarreta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroCarreta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoCarreta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -682,19 +682,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel19">
+                    <Component class="javax.swing.JLabel" name="lblCustoCarreta">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel20">
+                    <Component class="javax.swing.JLabel" name="lblLucroCarreta">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel21">
+                    <Component class="javax.swing.JLabel" name="lblPrecoCarreta">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -726,9 +726,9 @@
                                           <Component id="lblSuportaCargaVan" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoVan" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoVan" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel27" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel28" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel29" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoVan" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroVan" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoVan" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -754,11 +754,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoVan" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoVan" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroVan" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoVan" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -797,19 +797,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel27">
+                    <Component class="javax.swing.JLabel" name="lblCustoVan">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel28">
+                    <Component class="javax.swing.JLabel" name="lblLucroVan">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel29">
+                    <Component class="javax.swing.JLabel" name="lblPrecoVan">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -838,9 +838,9 @@
                                           <Component id="lblSuportaCargaCarro1" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoCarro1" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoCarro1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel35" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel36" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel37" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoCarro1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroCarro1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoCarro1" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -866,11 +866,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoCarro1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoCarro1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroCarro1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoCarro1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -909,19 +909,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel35">
+                    <Component class="javax.swing.JLabel" name="lblCustoCarro1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel36">
+                    <Component class="javax.swing.JLabel" name="lblLucroCarro1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel37">
+                    <Component class="javax.swing.JLabel" name="lblPrecoCarro1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -950,9 +950,9 @@
                                           <Component id="lblSuportaCargaCarro2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoCarro2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoCarro2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel43" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel44" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel45" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoCarro2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroCarro2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoCarro2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -978,11 +978,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoCarro2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoCarro2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroCarro2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoCarro2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1021,19 +1021,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel43">
+                    <Component class="javax.swing.JLabel" name="lblCustoCarro2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel44">
+                    <Component class="javax.swing.JLabel" name="lblLucroCarro2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel45">
+                    <Component class="javax.swing.JLabel" name="lblPrecoCarro2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -1062,9 +1062,9 @@
                                           <Component id="lblSuportaCargaMoto1" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoMoto1" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoMoto1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel51" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel52" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel53" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoMoto1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroMoto1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoMoto1" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1090,11 +1090,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoMoto1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoMoto1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroMoto1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoMoto1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1133,19 +1133,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel51">
+                    <Component class="javax.swing.JLabel" name="lblCustoMoto1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel52">
+                    <Component class="javax.swing.JLabel" name="lblLucroMoto1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel53">
+                    <Component class="javax.swing.JLabel" name="lblPrecoMoto1">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -1174,9 +1174,9 @@
                                           <Component id="lblSuportaCargaMoto2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblEntregaNoTempoMoto2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="lblTempoEstimadoMoto2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel59" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel60" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel61" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCustoMoto2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblLucroMoto2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblPrecoMoto2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1202,11 +1202,11 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblTempoEstimadoMoto2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCustoMoto2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLucroMoto2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPrecoMoto2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jButton6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1245,19 +1245,19 @@
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel59">
+                    <Component class="javax.swing.JLabel" name="lblCustoMoto2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel60">
+                    <Component class="javax.swing.JLabel" name="lblLucroMoto2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel61">
+                    <Component class="javax.swing.JLabel" name="lblPrecoMoto2">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="/"/>
@@ -1305,7 +1305,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel62">
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="Maior Lucro"/>
+                        <Property name="text" type="java.lang.String" value="Menor Custo"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel63">
@@ -1327,13 +1327,16 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel65" alignment="0" pref="80" max="32767" attributes="0"/>
-                                  <Component id="jLabel66" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel67" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jLabel67" pref="68" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jLabel66" alignment="0" pref="68" max="32767" attributes="0"/>
+                                      <Component id="jLabel65" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>

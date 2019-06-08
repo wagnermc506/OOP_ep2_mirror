@@ -37,10 +37,11 @@ public class LerArquivo {
             s = br.readLine();
             if(count < 4){
                 DL.setQtdeVeiculos(Integer.parseInt(s), count);
-                System.out.println(DL.getQtdeVeiculos(count));
+                //System.out.println(DL.getQtdeVeiculos(count));
             }
             else if(count == 4){
                 DL.setLucro(Integer.parseInt(s));
+                //System.out.println(DL.getLucro());
             }
             count++;
         }while(s != null);

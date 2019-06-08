@@ -5,7 +5,6 @@
  */
 package transporteinc;
 
-import static java.lang.Math.round;
 
 public class CalculoOperacao {
     private double qtdeCombustivelOperacao;
@@ -30,7 +29,7 @@ public class CalculoOperacao {
     }
     
     private void calculaTempo(double distancia, double velocidade){
-        this.tempoEstimado = round(distancia/velocidade);
+        this.tempoEstimado = distancia/velocidade;
     }
     
     private void setEntregaNoTempo(){

@@ -15,6 +15,10 @@ public class PrecoServico {
         setPrecoCombustivel(tipo);
     }
     
+    public double getCusto(){
+        return this.precoCombustivelOperacao;
+    }
+    
     public double getLucro(){
         return this.lucro;
     }
@@ -43,13 +47,13 @@ public class PrecoServico {
     
     private void setPrecoCombustivel(String tipo){
         if(null != tipo)switch (tipo) {
-            case "alcool":
+            case "Alcool":
                 this.precoCombustivel = Combustivel.ALCOOL;
                 break;
-            case "gasolina":
+            case "Gasolina":
                 this.precoCombustivel = Combustivel.GASOLINA;
                 break;
-            case "diesel":
+            case "Diesel":
                 this.precoCombustivel = Combustivel.DIESEL;
                 break;
             default:

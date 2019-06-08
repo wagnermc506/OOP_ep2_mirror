@@ -5,6 +5,9 @@
  */
 package transporteinc;
 
+import java.awt.Color;
+import java.text.DecimalFormat;
+
 /**
  *
  * @author wagner
@@ -17,6 +20,7 @@ public class Controle {
     public static Moto motoAlcool = new Moto("Alcool");         //case(5)
     public static Moto motoGasolina = new Moto("Gasolina");     //case(6)
     private static int count = 0;
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     
     public static void fazerCalculos(){
         carreta.calcularServico();
@@ -27,31 +31,66 @@ public class Controle {
         motoGasolina.calcularServico();
     }
     
-    public static void takeTime(javax.swing.JLabel tempoEstimado){
-        switch (count){
+    public static void exibePreco(javax.swing.JLabel custo, javax.swing.JLabel lucro, javax.swing.JLabel preco){
+        switch(count){
         case(0):
-            tempoEstimado.setText(String.valueOf(carreta.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(carreta.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(carreta.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(carreta.calculo.preco.getTotal())));
             count++;
             break;
         case(1):
-            tempoEstimado.setText(String.valueOf(van.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(van.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(van.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(van.calculo.preco.getTotal())));
             count++;
             break;
         case(2):
-            tempoEstimado.setText(String.valueOf(carroAlcool.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(carroAlcool.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(carroAlcool.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(carroAlcool.calculo.preco.getTotal())));
             count++;
             break;
         case(3):
-            tempoEstimado.setText(String.valueOf(carroGasolina.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(carroGasolina.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(carroGasolina.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(carroGasolina.calculo.preco.getTotal())));
             count++;
             break;
         case(4):
-            tempoEstimado.setText(String.valueOf(motoAlcool.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(motoAlcool.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(motoAlcool.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(motoAlcool.calculo.preco.getTotal())));
             count++;
             break;
         case(5):
-            tempoEstimado.setText(String.valueOf(motoGasolina.calculo.getTempoEstimado()));
+            custo.setText(String.valueOf(df.format(motoGasolina.calculo.preco.getCusto())));
+            lucro.setText(String.valueOf(df.format(motoGasolina.calculo.preco.getLucro())));
+            preco.setText(String.valueOf(df.format(motoGasolina.calculo.preco.getTotal())));
             count = 0;
+            break;
+        }
+    }
+    
+    public static void takeTime(javax.swing.JLabel tempoEstimado){
+        switch (count){
+        case(0):
+            tempoEstimado.setText(String.valueOf(df.format(carreta.calculo.getTempoEstimado())));
+            break;
+        case(1):
+            tempoEstimado.setText(String.valueOf(df.format(van.calculo.getTempoEstimado())));
+            break;
+        case(2):
+            tempoEstimado.setText(String.valueOf(df.format(carroAlcool.calculo.getTempoEstimado())));
+            break;
+        case(3):
+            tempoEstimado.setText(String.valueOf(df.format(carroGasolina.calculo.getTempoEstimado())));
+            break;
+        case(4):
+            tempoEstimado.setText(String.valueOf(df.format(motoAlcool.calculo.getTempoEstimado())));
+            break;
+        case(5):
+            tempoEstimado.setText(String.valueOf(df.format(motoGasolina.calculo.getTempoEstimado())));
             break;
         }
     }
@@ -64,6 +103,7 @@ public class Controle {
                 }
                 else{
                     veiculo.setText("Não");
+                    //veiculo.setForeground(Color.decode("#aa2244"));
                 }
                 if(Controle.carreta.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
