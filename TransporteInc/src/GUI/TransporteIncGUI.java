@@ -1035,6 +1035,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         
         lblMenorCusto.setText(Controle.getMenorCusto());
         lblMenorTempo.setText(Controle.getMenorTempo());
+        lblMaiorCB.setText(Controle.getMelhorCB());
         
     }//GEN-LAST:event_InButtonActionPerformed
 

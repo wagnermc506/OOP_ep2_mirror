@@ -9,6 +9,7 @@ package transporteinc;
 public class CalculoOperacao {
     private double qtdeCombustivelOperacao;
     private double tempoEstimado;
+    private double custoBeneficio;
     private boolean entregaNoTempo;
     private boolean suportaCarga;
     private boolean podeSerFeito;
@@ -34,6 +35,14 @@ public class CalculoOperacao {
     
     private void setEntregaNoTempo(){
         this.entregaNoTempo = this.tempoEstimado <= UserInput.getTempo();
+    }
+    
+    private void setCustoBeneficio(){
+        this.custoBeneficio = preco.getCusto() / this.tempoEstimado;
+    }
+    
+    public double getCustoBeneficio(){
+        return this.custoBeneficio;
     }
     
     private void setSuportaCarga(double cargaMax){
@@ -65,6 +74,7 @@ public class CalculoOperacao {
         setViabilidade();
         if(this.podeSerFeito){
             preco.CalcularFrete(qtdeCombustivelOperacao);
+            setCustoBeneficio();
         }
     }
 }

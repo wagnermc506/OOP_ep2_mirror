@@ -31,9 +31,23 @@ public class Controle {
         motoGasolina.calcularServico();
     }
     
-    private static double setMenor(int i, Veiculo a, double menor){
+    private static double setMenorCusto(int i, Veiculo a, double menor){
         if(i == 0){
             return a.calculo.preco.getCusto();
+        }
+        return menor;
+    }
+    
+    private static double setMenorTempo(int i, Veiculo a, double menor){
+        if(i == 0){
+            return a.calculo.getTempoEstimado();
+        }
+        return menor;
+    }
+    
+    private static double setMelhorCB(int i, Veiculo a, double menor){
+        if(i == 0){
+            return a.calculo.getCustoBeneficio();
         }
         return menor;
     }
@@ -45,37 +59,37 @@ public class Controle {
         double menor = -1;
         if(carreta.calculo.isViavel()){
             list[i] = carreta.calculo.preco.getCusto();
-            menor = setMenor(i, carreta, menor);
+            menor = setMenorCusto(i, carreta, menor);
             listS[i] = "Carreta";
             i++;
         }
         if(van.calculo.isViavel()){
             list[i] = van.calculo.preco.getCusto();
-            menor = setMenor(i, van, menor);
+            menor = setMenorCusto(i, van, menor);
             listS[i] = "Van";
             i++;
         }
         if(carroAlcool.calculo.isViavel()){
             list[i] = carroAlcool.calculo.preco.getCusto();
-            menor = setMenor(i, carroAlcool, menor);
+            menor = setMenorCusto(i, carroAlcool, menor);
             listS[i] = "CarroAlcool";
             i++;
         }
         if(carroGasolina.calculo.isViavel()){
             list[i] = carroGasolina.calculo.preco.getCusto();
-            menor = setMenor(i, carroGasolina, menor);
+            menor = setMenorCusto(i, carroGasolina, menor);
             listS[i] = "CarroGasolina";
             i++;
         }
         if(motoAlcool.calculo.isViavel()){
             list[i] = motoAlcool.calculo.preco.getCusto();
-            menor = setMenor(i, motoAlcool, menor);
-            listS[i] = "motoAlcool";
+            menor = setMenorCusto(i, motoAlcool, menor);
+            listS[i] = "MotoAlcool";
             i++;
         }
         if(motoGasolina.calculo.isViavel()){
             list[i] = motoGasolina.calculo.preco.getCusto();
-            menor = setMenor(i, motoGasolina, menor);
+            menor = setMenorCusto(i, motoGasolina, menor);
             listS[i] = "MotoGasolina";
             i++;
         }
@@ -111,9 +125,149 @@ public class Controle {
     }
     
     public static String getMenorTempo(){
+        double list[] = {0, 0, 0, 0, 0, 0};
+        String listS[] = {"", "", "", "", "", ""};
+        int i = 0;
+        double menor = -1;
+        if(carreta.calculo.isViavel()){
+            list[i] = carreta.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, carreta, menor);
+            listS[i] = "Carreta";
+            i++;
+        }
+        if(van.calculo.isViavel()){
+            list[i] = van.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, van, menor);
+            listS[i] = "Van";
+            i++;
+        }
+        if(carroAlcool.calculo.isViavel()){
+            list[i] = carroAlcool.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, carroAlcool, menor);
+            listS[i] = "CarroAlcool";
+            i++;
+        }
+        if(carroGasolina.calculo.isViavel()){
+            list[i] = carroGasolina.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, carroGasolina, menor);
+            listS[i] = "CarroGasolina";
+            i++;
+        }
+        if(motoAlcool.calculo.isViavel()){
+            list[i] = motoAlcool.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, motoAlcool, menor);
+            listS[i] = "MotoAlcool";
+            i++;
+        }
+        if(motoGasolina.calculo.isViavel()){
+            list[i] = motoGasolina.calculo.getTempoEstimado();
+            menor = setMenorTempo(i, motoGasolina, menor);
+            listS[i] = "MotoGasolina";
+            i++;
+        }
+        
+        int n = 0;
+        if (menor == -1){
+            return "Nenhum";
+        }
+        else{
+            for(int j = 0; j < i; j++){
+                if(menor > list[j]){
+                    menor = list[j];
+                    n = j;
+                }
+            }
+        }
+        String Veiculo = listS[n];
+        switch(Veiculo){
+            case("Carreta"):
+                return "Carreta";
+            case("Van"):
+                return "Van";
+            case("CarroAlcool"):
+                return "Carro(Alcool)";
+            case("CarroGasolina"):
+                return "Carro(Gasolina)";
+            case("MotoAlcool"):
+                return "Moto(Alcool)";
+            case("MotoGasolina"):
+                return "Moto(Gasolina)";
+        }
         return null;
     }
     
+    public static String getMelhorCB(){
+        double list[] = {0, 0, 0, 0, 0, 0};
+        String listS[] = {"", "", "", "", "", ""};
+        int i = 0;
+        double menor = -1;
+        if(carreta.calculo.isViavel()){
+            list[i] = carreta.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, carreta, menor);
+            listS[i] = "Carreta";
+            i++;
+        }
+        if(van.calculo.isViavel()){
+            list[i] = van.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, van, menor);
+            listS[i] = "Van";
+            i++;
+        }
+        if(carroAlcool.calculo.isViavel()){
+            list[i] = carroAlcool.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, carroAlcool, menor);
+            listS[i] = "CarroAlcool";
+            i++;
+        }
+        if(carroGasolina.calculo.isViavel()){
+            list[i] = carroGasolina.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, carroGasolina, menor);
+            listS[i] = "CarroGasolina";
+            i++;
+        }
+        if(motoAlcool.calculo.isViavel()){
+            list[i] = motoAlcool.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, motoAlcool, menor);
+            listS[i] = "MotoAlcool";
+            i++;
+        }
+        if(motoGasolina.calculo.isViavel()){
+            list[i] = motoGasolina.calculo.getCustoBeneficio();
+            menor = setMelhorCB(i, motoGasolina, menor);
+            listS[i] = "MotoGasolina";
+            i++;
+        }
+        
+        int n = 0;
+        if (menor == -1){
+            return "Nenhum";
+        }
+        else{
+            for(int j = 0; j < i; j++){
+                if(menor > list[j]){
+                    menor = list[j];
+                    n = j;
+                }
+            }
+        }
+        String Veiculo = listS[n];
+        switch(Veiculo){
+            case("Carreta"):
+                return "Carreta";
+            case("Van"):
+                return "Van";
+            case("CarroAlcool"):
+                return "Carro(Alcool)";
+            case("CarroGasolina"):
+                return "Carro(Gasolina)";
+            case("MotoAlcool"):
+                return "Moto(Alcool)";
+            case("MotoGasolina"):
+                return "Moto(Gasolina)";
+        }
+        return null;
+    }
+  
     public static void exibePreco(javax.swing.JLabel custo, javax.swing.JLabel lucro, javax.swing.JLabel preco){
         switch(count){
         case(0):
