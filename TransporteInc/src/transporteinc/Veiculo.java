@@ -22,7 +22,7 @@ public class Veiculo {
     }
     
     protected void calcularServico(){
-        calculo.calculaAll(this.rendimento, this.perdaRendimento, this.velocidadeMedia);
+        calculo.calculaAll(this.rendimento, this.perdaRendimento, this.velocidadeMedia, this.cargaMax);
     }
     
     /*public static void aumentarQtdeVeiculos(int qtdeMais){

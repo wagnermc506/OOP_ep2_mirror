@@ -5,10 +5,15 @@
  */
 package transporteinc;
 
+import static java.lang.Math.round;
+
 public class CalculoOperacao {
     private double qtdeCombustivelOperacao;
     private double tempoEstimado;
-    PrecoServico preco;
+    private boolean entregaNoTempo;
+    private boolean suportaCarga;
+    private boolean podeSerFeito;
+    public PrecoServico preco;
     
     CalculoOperacao(String tipoDeCombustivel){
         preco = new PrecoServico(tipoDeCombustivel);
@@ -20,15 +25,44 @@ public class CalculoOperacao {
         this.qtdeCombustivelOperacao = distancia / rendimentoReal;
     }
     
-    private void calculaVelocidade(double distancia, double velocidade){
-        this.tempoEstimado = distancia/velocidade; 
+    public double getTempoEstimado(){
+        return this.tempoEstimado;
     }
     
-    public void calculaAll(double rendimento, double perda, double velocidade){
+    private void calculaTempo(double distancia, double velocidade){
+        this.tempoEstimado = round(distancia/velocidade);
+    }
+    
+    private void setEntregaNoTempo(){
+        this.entregaNoTempo = this.tempoEstimado <= UserInput.getTempo();
+    }
+    
+    private void setSuportaCarga(double cargaMax){
+        suportaCarga = UserInput.getCarga() <= cargaMax;
+        //System.out.println(suportaCarga);
+    }
+    
+    public boolean getSuportaCarga(){
+        return this.suportaCarga;
+    }
+    
+    public boolean getEntregaNoTempo(){
+        return this.entregaNoTempo;
+    }
+    
+    private void setViabilidade(){
+        this.podeSerFeito = this.entregaNoTempo && this.suportaCarga;
+    }
+    
+    public void calculaAll(double rendimento, double perda, double velocidade, double cargaMax){
         calculaQtdeCombustivel(UserInput.getDistancia(), UserInput.getCarga(), rendimento, perda);
-        calculaVelocidade(UserInput.getDistancia(), velocidade);
-        preco.CalcularFrete(qtdeCombustivelOperacao);
-                
+        calculaTempo(UserInput.getDistancia(), velocidade);
+        setEntregaNoTempo();
+        setSuportaCarga(cargaMax);
+        setViabilidade();
+        if(this.podeSerFeito){
+            preco.CalcularFrete(qtdeCombustivelOperacao);
+        }
     }
 }
 
