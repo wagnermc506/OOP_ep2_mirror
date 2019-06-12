@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package GUI;
+import java.awt.Color;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -149,6 +150,10 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblMaiorCB = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAutoRequestFocus(false);
+
+        jPanel1.setBackground(Color.decode("#C3DAD4"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(76, 89, 97)));
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jLabel1.setText("Carreta");
@@ -167,18 +172,30 @@ public class TransporteIncGUI extends javax.swing.JFrame {
 
         DispCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DispCarreta.setText("jLabel6");
+        if(isVazio(numDispCarretas)){
+            DispCarreta.setForeground(Color.decode("#E00021"));
+        }
         DispCarreta.setText(numDispCarretas + " / " + numCarretas);
 
         DispVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DispVan.setText("jLabel7");
+        if(isVazio(numDispVans)){
+            DispVan.setForeground(Color.decode("#E00021"));
+        }
         DispVan.setText(numDispVans + " / " + numVans);
 
         DispCarro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DispCarro.setText("jLabel8");
+        if(isVazio(numDispCarros)){
+            DispCarro.setForeground(Color.decode("#E00021"));
+        }
         DispCarro.setText(numDispCarros + " / " + numCarros);
 
         DispMoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DispMoto.setText("jLabel9");
+        if(isVazio(numDispMotos)){
+            DispMoto.setForeground(Color.decode("#E00021"));
+        }
         DispMoto.setText(numDispMotos + " / " + numMotos);
 
         editarFrota.setText("Editar Frota/Lucro");
@@ -272,6 +289,10 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap(54, Short.MAX_VALUE))
         );
 
+        jPanel2.setBackground(Color.decode("#C3DAD4"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(76, 89, 97)));
+        jPanel2.setForeground(new java.awt.Color(76, 89, 97));
+
         InlblPeso.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         InlblPeso.setText("Peso");
 
@@ -357,6 +378,14 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jPanel3.setBackground(java.awt.Color.lightGray);
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(68, 68, 68)));
 
+        jTabbedPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTabbedPane1.setForeground(new java.awt.Color(76, 89, 97));
+
+        jPanel4.setBackground(Color.decode("#C3DAD4"));
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(76, 89, 97)));
+
+        jPanel6.setBackground(Color.decode("#C3DAD4"));
+
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Veículo");
 
@@ -419,6 +448,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(jLabel13)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel7.setBackground(Color.decode("#C3DAD4"));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Carreta");
@@ -497,6 +528,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel8.setBackground(Color.decode("#C3DAD4"));
+
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText("Van");
 
@@ -573,6 +606,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(buttonVan)
                 .addContainerGap())
         );
+
+        jPanel9.setBackground(Color.decode("#C3DAD4"));
 
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel30.setText("Carro");
@@ -651,6 +686,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel10.setBackground(Color.decode("#C3DAD4"));
+
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("Carro");
 
@@ -727,6 +764,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(buttonCarro2)
                 .addContainerGap())
         );
+
+        jPanel11.setBackground(Color.decode("#C3DAD4"));
 
         jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel46.setText("Moto");
@@ -806,6 +845,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel12.setBackground(Color.decode("#C3DAD4"));
+
         jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel54.setText("Moto");
 
@@ -884,6 +925,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel13.setBackground(Color.decode("#C3DAD4"));
+
         jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel62.setText("Menor Custo");
 
@@ -916,6 +959,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(jLabel64)
                 .addContainerGap(71, Short.MAX_VALUE))
         );
+
+        jPanel14.setBackground(Color.decode("#C3DAD4"));
 
         lblMenorCusto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMenorCusto.setText("-");
@@ -1016,12 +1061,12 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1083,22 +1128,37 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             SalvarArquivo sa = new SalvarArquivo();
             
             numCarretas = numCarretas + (Integer)spinnerCarreta.getValue();
+            if(numCarretas < 0){
+                numCarretas = 0;
+            }
             DispCarreta.setText(numDispCarretas + " / " + String.valueOf(numCarretas));
             spinnerCarreta.setValue(0);
             
             numVans = numVans + (Integer)spinnerVan.getValue();
             DispVan.setText(numDispVans + " / " + String.valueOf(numVans));
             spinnerVan.setValue(0);
+            if(numVans < 0){
+                numVans = 0;
+            }
             
             numCarros = numCarros + (Integer)spinnerCarro.getValue();
             DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
             spinnerCarro.setValue(0);
+            if(numCarros < 0){
+                numCarros = 0;
+            }
             
             numMotos = numMotos + (Integer)spinnerMoto.getValue();
             DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
             spinnerMoto.setValue(0);
+            if(numMotos < 0){
+                numMotos = 0;
+            }
             
             lucro = lucro + (Integer)spinnerLucro.getValue();
+            if(lucro < 0){
+                lucro = 0;
+            }
             lblMargemDeLucro.setText("Margem de Lucro: " + String.valueOf(lucro) + "%");
             spinnerLucro.setValue(0);
             
@@ -1114,39 +1174,67 @@ public class TransporteIncGUI extends javax.swing.JFrame {
 
     private void buttonCarretaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarretaActionPerformed
         numDispCarretas--;
+        if(isVazio(numDispCarretas)){
+            numDispCarretas = 0;
+            DispCarreta.setForeground(Color.decode("#E00021"));
+        }
         DispCarreta.setText(numDispCarretas + " / " + String.valueOf(numCarretas));
         disableAll();
     }//GEN-LAST:event_buttonCarretaActionPerformed
 
     private void buttonVanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVanActionPerformed
         numDispVans--;
+        if(isVazio(numDispVans)){
+            numDispVans = 0;
+            DispVan.setForeground(Color.decode("#E00021"));
+        }
         DispVan.setText(numDispVans + " / " + String.valueOf(numVans));
         disableAll();
     }//GEN-LAST:event_buttonVanActionPerformed
 
     private void buttonCarro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarro1ActionPerformed
         numDispCarros--;
+        if(isVazio(numDispCarros)){
+            numDispCarros = 0;
+            DispCarro.setForeground(Color.decode("#E00021"));
+        }
         DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
         disableAll();
     }//GEN-LAST:event_buttonCarro1ActionPerformed
 
     private void buttonCarro2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarro2ActionPerformed
         numDispCarros--;
+        if(isVazio(numDispCarros)){
+            numDispCarros = 0;
+            DispCarro.setForeground(Color.decode("#E00021"));
+        }
         DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
         disableAll();
     }//GEN-LAST:event_buttonCarro2ActionPerformed
 
     private void buttonMoto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMoto1ActionPerformed
         numDispMotos--;
+        if(isVazio(numDispMotos)){
+            numDispMotos = 0;
+            DispMoto.setForeground(Color.decode("#E00021"));
+        }
         DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
         disableAll();
     }//GEN-LAST:event_buttonMoto1ActionPerformed
 
     private void buttonMoto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMoto2ActionPerformed
         numDispMotos--;
+        if(isVazio(numDispMotos)){
+            numDispMotos = 0;
+            DispMoto.setForeground(Color.decode("#E00021"));
+        }
         DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
         disableAll();
     }//GEN-LAST:event_buttonMoto2ActionPerformed
+    
+    private boolean isVazio(int num){
+        return num <= 0;
+    }
     
     private void disableAll(){
         buttonCarreta.setEnabled(false);
@@ -1154,7 +1242,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         buttonCarro1.setEnabled(false);
         buttonCarro2.setEnabled(false);
         buttonMoto1.setEnabled(false);
-        buttonMoto1.setEnabled(false);
+        buttonMoto2.setEnabled(false);
     }
     
     private void setNums() throws IOException{

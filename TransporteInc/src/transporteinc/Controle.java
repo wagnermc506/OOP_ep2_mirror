@@ -337,16 +337,19 @@ public class Controle {
             case(0):
                 if(Controle.carreta.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
-                    //veiculo.setForeground(Color.decode("#aa2244"));
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carreta.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carreta.calculo.isViavel()){
                     button.setEnabled(true);
@@ -358,15 +361,19 @@ public class Controle {
             case(1):
                 if(Controle.van.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.van.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.van.calculo.isViavel()){
                     button.setEnabled(true);
@@ -378,15 +385,19 @@ public class Controle {
             case(2):
                 if(Controle.carroAlcool.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carroAlcool.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carroAlcool.calculo.isViavel()){
                     button.setEnabled(true);
@@ -398,15 +409,19 @@ public class Controle {
             case(3):
                 if(Controle.carroGasolina.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carroGasolina.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.carroGasolina.calculo.isViavel()){
                     button.setEnabled(true);
@@ -418,15 +433,19 @@ public class Controle {
             case(4):
                 if(Controle.motoAlcool.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.motoAlcool.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.motoAlcool.calculo.isViavel()){
                     button.setEnabled(true);
@@ -438,15 +457,19 @@ public class Controle {
             case(5):
                 if(Controle.motoGasolina.calculo.getSuportaCarga()){
                     veiculo.setText("Sim");
+                    veiculo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     veiculo.setText("Não");
+                    veiculo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.motoGasolina.calculo.getEntregaNoTempo()){
                     tempo.setText("Sim");
+                    tempo.setForeground(Color.decode("#004208"));
                 }
                 else{
                     tempo.setText("Não");
+                    tempo.setForeground(Color.decode("#E00021"));
                 }
                 if(Controle.motoGasolina.calculo.isViavel()){
                     button.setEnabled(true);
