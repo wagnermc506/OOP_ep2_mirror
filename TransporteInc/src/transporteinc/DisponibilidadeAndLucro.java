@@ -22,6 +22,7 @@ public class DisponibilidadeAndLucro {
     }
     
     public void setLucro(int lucro){
+        UserInput.setMargem(lucro);
         this.lucropercent = lucro;
     }
     

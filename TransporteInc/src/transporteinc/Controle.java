@@ -332,7 +332,7 @@ public class Controle {
         }
     }
     
-    public static void verificaTudo(javax.swing.JLabel veiculo, javax.swing.JLabel tempo){
+    public static void verificaTudo(javax.swing.JLabel veiculo, javax.swing.JLabel tempo, javax.swing.JButton button){
         switch (count){
             case(0):
                 if(Controle.carreta.calculo.getSuportaCarga()){
@@ -348,6 +348,12 @@ public class Controle {
                 else{
                     tempo.setText("Não");
                 }
+                if(Controle.carreta.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
+                }
                 break;
             case(1):
                 if(Controle.van.calculo.getSuportaCarga()){
@@ -361,6 +367,12 @@ public class Controle {
                 }
                 else{
                     tempo.setText("Não");
+                }
+                if(Controle.van.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
                 }
                 break;
             case(2):
@@ -376,6 +388,12 @@ public class Controle {
                 else{
                     tempo.setText("Não");
                 }
+                if(Controle.carroAlcool.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
+                }
                 break;
             case(3):
                 if(Controle.carroGasolina.calculo.getSuportaCarga()){
@@ -389,6 +407,12 @@ public class Controle {
                 }
                 else{
                     tempo.setText("Não");
+                }
+                if(Controle.carroGasolina.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
                 }
                 break;
             case(4):
@@ -404,6 +428,12 @@ public class Controle {
                 else{
                     tempo.setText("Não");
                 }
+                if(Controle.motoAlcool.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
+                }
                 break;
             case(5):
                 if(Controle.motoGasolina.calculo.getSuportaCarga()){
@@ -417,6 +447,12 @@ public class Controle {
                 }
                 else{
                     tempo.setText("Não");
+                }
+                if(Controle.motoGasolina.calculo.isViavel()){
+                    button.setEnabled(true);
+                }
+                else{
+                    button.setEnabled(false);
                 }
                 break;
         }

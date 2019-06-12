@@ -88,7 +88,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoCarreta = new javax.swing.JLabel();
         lblLucroCarreta = new javax.swing.JLabel();
         lblPrecoCarreta = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        buttonCarreta = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -98,7 +98,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoVan = new javax.swing.JLabel();
         lblLucroVan = new javax.swing.JLabel();
         lblPrecoVan = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        buttonVan = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
@@ -108,7 +108,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoCarro1 = new javax.swing.JLabel();
         lblLucroCarro1 = new javax.swing.JLabel();
         lblPrecoCarro1 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        buttonCarro1 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -118,7 +118,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoCarro2 = new javax.swing.JLabel();
         lblLucroCarro2 = new javax.swing.JLabel();
         lblPrecoCarro2 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        buttonCarro2 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
@@ -128,7 +128,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoMoto1 = new javax.swing.JLabel();
         lblLucroMoto1 = new javax.swing.JLabel();
         lblPrecoMoto1 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        buttonMoto1 = new javax.swing.JButton();
         jPanel12 = new javax.swing.JPanel();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
@@ -138,7 +138,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblCustoMoto2 = new javax.swing.JLabel();
         lblLucroMoto2 = new javax.swing.JLabel();
         lblPrecoMoto2 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        buttonMoto2 = new javax.swing.JButton();
         jPanel13 = new javax.swing.JPanel();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
@@ -444,11 +444,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoCarreta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoCarreta.setText("/");
 
-        jButton1.setText("Ok");
-        jButton1.setEnabled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonCarreta.setText("Ok");
+        buttonCarreta.setEnabled(false);
+        buttonCarreta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                buttonCarretaActionPerformed(evt);
             }
         });
 
@@ -457,22 +457,21 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                            .addComponent(lblSuportaCargaCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEntregaNoTempoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblTempoEstimadoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCustoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLucroCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPrecoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(lblSuportaCargaCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblEntregaNoTempoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTempoEstimadoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCustoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblLucroCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPrecoCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(buttonCarreta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -493,9 +492,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroCarreta)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoCarreta)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonCarreta)
+                .addContainerGap())
         );
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -522,30 +521,34 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoVan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoVan.setText("/");
 
-        jButton2.setText("Ok");
-        jButton2.setEnabled(false);
+        buttonVan.setText("Ok");
+        buttonVan.setEnabled(false);
+        buttonVan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonVanActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblSuportaCargaVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEntregaNoTempoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblTempoEstimadoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCustoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLucroVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPrecoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblSuportaCargaVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblEntregaNoTempoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTempoEstimadoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCustoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblLucroVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPrecoVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addComponent(buttonVan, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -566,9 +569,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroVan)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoVan)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonVan)
+                .addContainerGap())
         );
 
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -595,30 +598,34 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoCarro1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoCarro1.setText("/");
 
-        jButton3.setText("Ok");
-        jButton3.setEnabled(false);
+        buttonCarro1.setText("Ok");
+        buttonCarro1.setEnabled(false);
+        buttonCarro1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCarro1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblSuportaCargaCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEntregaNoTempoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblTempoEstimadoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCustoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLucroCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPrecoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblSuportaCargaCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblEntregaNoTempoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTempoEstimadoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCustoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblLucroCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPrecoCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(buttonCarro1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -639,9 +646,9 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroCarro1)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoCarro1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonCarro1)
+                .addContainerGap())
         );
 
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -668,30 +675,34 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoCarro2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoCarro2.setText("/");
 
-        jButton4.setText("Ok");
-        jButton4.setEnabled(false);
+        buttonCarro2.setText("Ok");
+        buttonCarro2.setEnabled(false);
+        buttonCarro2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCarro2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                            .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblSuportaCargaCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblEntregaNoTempoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblTempoEstimadoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCustoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLucroCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPrecoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblSuportaCargaCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblEntregaNoTempoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTempoEstimadoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCustoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblLucroCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPrecoCarro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addComponent(buttonCarro2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -712,8 +723,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroCarro2)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoCarro2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonCarro2)
                 .addContainerGap())
         );
 
@@ -741,8 +752,13 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoMoto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoMoto1.setText("/");
 
-        jButton5.setText("Ok");
-        jButton5.setEnabled(false);
+        buttonMoto1.setText("Ok");
+        buttonMoto1.setEnabled(false);
+        buttonMoto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonMoto1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -763,7 +779,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblPrecoMoto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(buttonMoto1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -785,8 +801,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroMoto1)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoMoto1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonMoto1)
                 .addContainerGap())
         );
 
@@ -814,8 +830,13 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         lblPrecoMoto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPrecoMoto2.setText("/");
 
-        jButton6.setText("Ok");
-        jButton6.setEnabled(false);
+        buttonMoto2.setText("Ok");
+        buttonMoto2.setEnabled(false);
+        buttonMoto2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonMoto2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -836,7 +857,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                             .addComponent(lblPrecoMoto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(buttonMoto2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -858,8 +879,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                 .addComponent(lblLucroMoto2)
                 .addGap(18, 18, 18)
                 .addComponent(lblPrecoMoto2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonMoto2)
                 .addContainerGap())
         );
 
@@ -1000,7 +1021,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1026,27 +1047,27 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         UserInput.setall(distancia, tempo, carga);
         Controle.fazerCalculos();
         
-        Controle.verificaTudo(lblSuportaCargaCarreta, lblEntregaNoTempoCarreta);
+        Controle.verificaTudo(lblSuportaCargaCarreta, lblEntregaNoTempoCarreta, buttonCarreta);
         Controle.takeTime(lblTempoEstimadoCarreta);
         Controle.exibePreco(lblCustoCarreta, lblLucroCarreta, lblPrecoCarreta);
         
-        Controle.verificaTudo(lblSuportaCargaVan, lblEntregaNoTempoVan);
+        Controle.verificaTudo(lblSuportaCargaVan, lblEntregaNoTempoVan, buttonVan);
         Controle.takeTime(lblTempoEstimadoVan);
         Controle.exibePreco(lblCustoVan, lblLucroVan, lblPrecoVan);
         
-        Controle.verificaTudo(lblSuportaCargaCarro1, lblEntregaNoTempoCarro1);
+        Controle.verificaTudo(lblSuportaCargaCarro1, lblEntregaNoTempoCarro1, buttonCarro1);
         Controle.takeTime(lblTempoEstimadoCarro1);
         Controle.exibePreco(lblCustoCarro1, lblLucroCarro1, lblPrecoCarro1);
         
-        Controle.verificaTudo(lblSuportaCargaCarro2, lblEntregaNoTempoCarro2);
+        Controle.verificaTudo(lblSuportaCargaCarro2, lblEntregaNoTempoCarro2, buttonCarro2);
         Controle.takeTime(lblTempoEstimadoCarro2);
         Controle.exibePreco(lblCustoCarro2, lblLucroCarro2, lblPrecoCarro2);
         
-        Controle.verificaTudo(lblSuportaCargaMoto1, lblEntregaNoTempoMoto1);
+        Controle.verificaTudo(lblSuportaCargaMoto1, lblEntregaNoTempoMoto1, buttonMoto1);
         Controle.takeTime(lblTempoEstimadoMoto1);
         Controle.exibePreco(lblCustoMoto1, lblLucroMoto1, lblPrecoMoto1);
         
-        Controle.verificaTudo(lblSuportaCargaMoto2, lblEntregaNoTempoMoto2);
+        Controle.verificaTudo(lblSuportaCargaMoto2, lblEntregaNoTempoMoto2, buttonMoto2);
         Controle.takeTime(lblTempoEstimadoMoto2);
         Controle.exibePreco(lblCustoMoto2, lblLucroMoto2, lblPrecoMoto2);
         
@@ -1091,9 +1112,51 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_editarFrotaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void buttonCarretaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarretaActionPerformed
+        numDispCarretas--;
+        DispCarreta.setText(numDispCarretas + " / " + String.valueOf(numCarretas));
+        disableAll();
+    }//GEN-LAST:event_buttonCarretaActionPerformed
+
+    private void buttonVanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVanActionPerformed
+        numDispVans--;
+        DispVan.setText(numDispVans + " / " + String.valueOf(numVans));
+        disableAll();
+    }//GEN-LAST:event_buttonVanActionPerformed
+
+    private void buttonCarro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarro1ActionPerformed
+        numDispCarros--;
+        DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
+        disableAll();
+    }//GEN-LAST:event_buttonCarro1ActionPerformed
+
+    private void buttonCarro2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCarro2ActionPerformed
+        numDispCarros--;
+        DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
+        disableAll();
+    }//GEN-LAST:event_buttonCarro2ActionPerformed
+
+    private void buttonMoto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMoto1ActionPerformed
+        numDispMotos--;
+        DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
+        disableAll();
+    }//GEN-LAST:event_buttonMoto1ActionPerformed
+
+    private void buttonMoto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMoto2ActionPerformed
+        numDispMotos--;
+        DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
+        disableAll();
+    }//GEN-LAST:event_buttonMoto2ActionPerformed
+    
+    private void disableAll(){
+        buttonCarreta.setEnabled(false);
+        buttonVan.setEnabled(false);
+        buttonCarro1.setEnabled(false);
+        buttonCarro2.setEnabled(false);
+        buttonMoto1.setEnabled(false);
+        buttonMoto1.setEnabled(false);
+    }
+    
     private void setNums() throws IOException{
         LerArquivo FileRead = new LerArquivo();
         this.numCarretas = FileRead.DL.getQtdeVeiculos(0);
@@ -1167,13 +1230,13 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel InlblKm;
     private javax.swing.JLabel InlblPeso;
     private javax.swing.JLabel InlblTempo;
+    private javax.swing.JButton buttonCarreta;
+    private javax.swing.JButton buttonCarro1;
+    private javax.swing.JButton buttonCarro2;
+    private javax.swing.JButton buttonMoto1;
+    private javax.swing.JButton buttonMoto2;
+    private javax.swing.JButton buttonVan;
     private javax.swing.JButton editarFrota;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
