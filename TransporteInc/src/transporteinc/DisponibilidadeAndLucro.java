@@ -11,7 +11,7 @@ package transporteinc;
  */
 public class DisponibilidadeAndLucro {
     private int QuantidadeDeVeiculos[] = {0, 0, 0, 0};
-    //private int lucropercent;
+    private int lucropercent;
     
     public void setQtdeVeiculos(int qtde, int n){
         this.QuantidadeDeVeiculos[n] = qtde;
@@ -22,10 +22,10 @@ public class DisponibilidadeAndLucro {
     }
     
     public void setLucro(int lucro){
-        UserInput.setMargem(lucro);
+        this.lucropercent = lucro;
     }
     
-    /*public int getLucro(){
+    public int getLucro(){
         return this.lucropercent;
-    }*/
+    }
 }

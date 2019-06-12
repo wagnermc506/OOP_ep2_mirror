@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package GUI;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -50,6 +51,8 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         spinnerVan = new javax.swing.JSpinner();
         spinnerCarro = new javax.swing.JSpinner();
         spinnerMoto = new javax.swing.JSpinner();
+        lblMargemDeLucro = new javax.swing.JLabel();
+        spinnerLucro = new javax.swing.JSpinner();
         jPanel2 = new javax.swing.JPanel();
         InlblPeso = new javax.swing.JLabel();
         InlblDistancia = new javax.swing.JLabel();
@@ -178,12 +181,16 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         DispMoto.setText("jLabel9");
         DispMoto.setText(numDispMotos + " / " + numMotos);
 
-        editarFrota.setText("Editar Frota");
+        editarFrota.setText("Editar Frota/Lucro");
         editarFrota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 editarFrotaActionPerformed(evt);
             }
         });
+
+        lblMargemDeLucro.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
+        lblMargemDeLucro.setText("Margem de Lucro: ");
+        lblMargemDeLucro.setText("Margem de Lucro: " + lucro + "%");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -192,38 +199,44 @@ public class TransporteIncGUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addContainerGap()
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addGap(35, 35, 35)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(37, 37, 37)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(DispCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
-                            .addComponent(DispVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(DispCarro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(DispMoto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(25, 25, 25)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(spinnerCarreta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
-                            .addComponent(spinnerVan, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(spinnerMoto)
-                            .addComponent(spinnerCarro)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(136, 136, 136)
                         .addComponent(jLabel5))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(editarFrota)))
-                .addContainerGap(49, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addContainerGap()
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                            .addGap(35, 35, 35)
+                                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(35, 35, 35)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGap(37, 37, 37)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(DispCarreta, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                                    .addComponent(DispVan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(DispCarro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(DispMoto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(35, 35, 35)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(editarFrota, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblMargemDeLucro, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(7, 7, 7)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spinnerLucro, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(spinnerCarreta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+                                .addComponent(spinnerVan, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(spinnerMoto)
+                                .addComponent(spinnerCarro)))))
+                .addGap(17, 17, 17))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,7 +265,11 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                     .addComponent(spinnerMoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(editarFrota)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMargemDeLucro)
+                    .addComponent(spinnerLucro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         InlblPeso.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
@@ -993,7 +1010,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(117, 117, 117)
+                        .addGap(32, 32, 32)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(197, Short.MAX_VALUE))
         );
@@ -1040,21 +1057,38 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_InButtonActionPerformed
 
     private void editarFrotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarFrotaActionPerformed
-        numCarretas = numCarretas + (Integer)spinnerCarreta.getValue();
-        DispCarreta.setText(numDispCarretas + " / " + String.valueOf(numCarretas));
-        spinnerCarreta.setValue(0);
-        
-        numVans = numVans + (Integer)spinnerVan.getValue();
-        DispVan.setText(numDispVans + " / " + String.valueOf(numVans));
-        spinnerVan.setValue(0);
-        
-        numCarros = numCarros + (Integer)spinnerCarro.getValue();
-        DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
-        spinnerCarro.setValue(0);
-        
-        numMotos = numMotos + (Integer)spinnerMoto.getValue();
-        DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
-        spinnerMoto.setValue(0);
+
+        try {
+            SalvarArquivo sa = new SalvarArquivo();
+            
+            numCarretas = numCarretas + (Integer)spinnerCarreta.getValue();
+            DispCarreta.setText(numDispCarretas + " / " + String.valueOf(numCarretas));
+            spinnerCarreta.setValue(0);
+            
+            numVans = numVans + (Integer)spinnerVan.getValue();
+            DispVan.setText(numDispVans + " / " + String.valueOf(numVans));
+            spinnerVan.setValue(0);
+            
+            numCarros = numCarros + (Integer)spinnerCarro.getValue();
+            DispCarro.setText(numDispCarros + " / " + String.valueOf(numCarros));
+            spinnerCarro.setValue(0);
+            
+            numMotos = numMotos + (Integer)spinnerMoto.getValue();
+            DispMoto.setText(numDispMotos + " / " + String.valueOf(numMotos));
+            spinnerMoto.setValue(0);
+            
+            lucro = lucro + (Integer)spinnerLucro.getValue();
+            lblMargemDeLucro.setText("Margem de Lucro: " + String.valueOf(lucro) + "%");
+            spinnerLucro.setValue(0);
+            
+            sa.salvarDados(String.valueOf(numCarretas), String.valueOf(numVans), String.valueOf(numCarros), String.valueOf(numMotos), String.valueOf(lucro));
+            sa.close();
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(TransporteIncGUI.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(TransporteIncGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_editarFrotaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1066,7 +1100,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
         this.numVans = FileRead.DL.getQtdeVeiculos(1);
         this.numCarros = FileRead.DL.getQtdeVeiculos(2);
         this.numMotos = FileRead.DL.getQtdeVeiculos(3);
-        //this.lucro = FileRead.DL.getLucro();
+        this.lucro = FileRead.DL.getLucro();
         FileRead.fechar();
         this.numDispCarretas = numCarretas;
         this.numDispVans = numVans;
@@ -1115,7 +1149,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private int numVans;
     private int numCarros;
     private int numMotos;
-    //private int lucro;
+    private int lucro;
     //Número de veículos Disponíveis para fazer a entrega
     private int numDispCarretas;
     private int numDispVans;
@@ -1204,6 +1238,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblLucroMoto2;
     private javax.swing.JLabel lblLucroVan;
     private javax.swing.JLabel lblMaiorCB;
+    private javax.swing.JLabel lblMargemDeLucro;
     private javax.swing.JLabel lblMenorCusto;
     private javax.swing.JLabel lblMenorTempo;
     private javax.swing.JLabel lblPrecoCarreta;
@@ -1226,6 +1261,7 @@ public class TransporteIncGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblTempoEstimadoVan;
     private javax.swing.JSpinner spinnerCarreta;
     private javax.swing.JSpinner spinnerCarro;
+    private javax.swing.JSpinner spinnerLucro;
     private javax.swing.JSpinner spinnerMoto;
     private javax.swing.JSpinner spinnerVan;
     private javax.swing.JTextPane txtDistancia;
