@@ -24,7 +24,8 @@ public class LerArquivo {
     
     public LerArquivo() throws FileNotFoundException, IOException {
         this.DL = new DisponibilidadeAndLucro();
-        this.is = new FileInputStream("src/transporteinc/DadosSalvos.txt");
+        //this.is = new FileInputStream("src/transporteinc/DadosSalvos.txt");
+        this.is = new FileInputStream("DadosSalvos.txt");
         this.isr = new InputStreamReader(this.is);
         this.br = new BufferedReader(this.isr);
         lerLinhas();

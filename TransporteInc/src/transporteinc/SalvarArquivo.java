@@ -23,7 +23,8 @@ public class SalvarArquivo {
     private BufferedWriter bw;
     
     public SalvarArquivo() throws FileNotFoundException{
-        os = new FileOutputStream("src/transporteinc/DadosSalvos.txt", false);
+        //os = new FileOutputStream("src/transporteinc/DadosSalvos.txt", false);
+        os = new FileOutputStream("DadosSalvos.txt", false);
         osw = new OutputStreamWriter(os);
         bw = new BufferedWriter(osw);
     }
