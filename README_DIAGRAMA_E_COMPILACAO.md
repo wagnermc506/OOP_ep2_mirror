@@ -39,4 +39,6 @@ obs: Devido a problemas com o local do arquivo que persiste as informações, o 
 
 ## Diagrama de Classes
 
+ ![](Diagrama.PNG)
+
 
